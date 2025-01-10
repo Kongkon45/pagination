@@ -29,11 +29,11 @@ const Products = () => {
   const lastPageIndex = currentPage * postPerPage;
   const firstPageIndex = lastPageIndex - postPerPage;
   const currentPosts = data?.slice(firstPageIndex, lastPageIndex);
-  console.log(currentPosts);
+  // console.log(currentPosts);
 
   if (isLoading) return <p>Loading ...</p>;
   if (error) return <p>Error : {error}</p>;
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
